@@ -1,0 +1,22 @@
+server:
+  port: 8090
+  servlet:
+    context-path: /MyApp
+  
+spring:
+  mvc:
+    view:
+      prefix: /views/
+      suffix: .jsp  
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/dbname
+    username: root
+    password: Pr@veen4795
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+ 
+    
